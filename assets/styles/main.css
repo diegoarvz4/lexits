@@ -1,0 +1,87 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+.flexcontainer{
+    display: flex;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.center-center{
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    height: 100px;
+    width: 80%; 
+    margin: 0 auto; 
+   
+    justify-content: space-between;
+}
+
+.header-logo{
+    justify-content: flex-start;
+    width:90px;
+    width:90px;
+}
+
+.header-logo img{
+    width: 100%;
+}
+
+.main-header-links{
+    height: 100%;
+}
+
+.main-header-links li{
+   margin-right: 30px;
+   margin-left: 30px;
+}
+
+.main-header-links li:last-child{
+    margin-right: 0;
+ }
+
+ .main-header-links li:first-child{
+    margin-left: 0;
+ }
+ 
+.lan-header-links{
+    height: 100%;
+    align-items: center;
+}
+
+/*LEXI BRAND CONTAINER*/
+
+.lexi-brand-container{
+    margin-top: 50px;
+    width: 100%;
+    float: left;
+}
+
+.lexi-brand{
+    width: 33.33%;
+    padding: 30px;
+    text-align: center;
+}
+
+.lexi-brand-img{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.lexi-brand-img img{
+    width: 100%;
+    
+}
