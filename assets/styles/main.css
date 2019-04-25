@@ -42,11 +42,17 @@ header{
 
 .main-header-links{
     height: 100%;
+    
 }
 
 .main-header-links li{
    margin-right: 30px;
    margin-left: 30px;
+}
+
+.main-header-links a{
+    text-decoration: none;
+    color: black;
 }
 
 .main-header-links li:last-child{
@@ -60,6 +66,11 @@ header{
 .lan-header-links{
     height: 100%;
     align-items: center;
+}
+
+.main-header-links .active-link{
+   color: rgb(39, 0, 146);
+   font-weight: bold;
 }
 
 /*LEXI BRAND CONTAINER*/
@@ -87,7 +98,6 @@ header{
     max-height: 200px;
     
 }
-
 
 /*FOOTER */
 
