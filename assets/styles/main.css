@@ -89,15 +89,27 @@ header{
 
 .lexi-brand-img{
     width: 100%;
- 
     margin-bottom: 50px;
+    min-height: 190px;
 }
 
 .lexi-brand-img img{
     width: 100%;
-    max-height: 200px;
-    
+    height: 100px;
+    min-height: 150px;
 }
+
+.lexi-brand:nth-child(2) .lexi-brand-img img{
+    height: 190px;
+    min-height: 190px;
+}
+
+.lexi-brand:nth-child(3) .lexi-brand-img img{
+    height: 165px;
+    min-height: 165px;
+}
+
+
 
 /*FOOTER */
 
@@ -110,4 +122,44 @@ footer{
     bottom: 0;
     text-align: center;
     color: white;
+}
+
+/*NOSOTROS*/
+
+.nosotros-container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.nosotros-container-img{
+    width: 40%;
+    height: 500px;
+    background-image: url('http://www.kjellandersjoberg.se/wp-content/uploads/2016/08/KjellanderSjoberg_Team_%C2%A9MikaelOlsson-1200x775.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.nosotros-container-msg{
+    text-align: right;
+    width: 60%;
+    padding-left: 20px;
+    line-height: 2.5rem;
+}
+
+.nosotros-container-msg h1{
+  font-size: 1rem;
+  
+}
+
+.nosotros-container-msg h2{
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+}
+
+.nosotros-container-msg p{
+  width: 60%;
+  margin-left: 40%;
+  margin-right: 0;
+  line-height: 2rem;
+  font-size: 1.5rem;
 }
