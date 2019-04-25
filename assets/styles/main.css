@@ -23,10 +23,10 @@ body{
 }
 
 header{
-    height: 100px;
+    height: 150px;
     width: 80%; 
     margin: 0 auto; 
-   
+    margin-top: 30px;
     justify-content: space-between;
 }
 
@@ -78,10 +78,26 @@ header{
 
 .lexi-brand-img{
     width: 100%;
+ 
     margin-bottom: 50px;
 }
 
 .lexi-brand-img img{
     width: 100%;
+    max-height: 200px;
     
+}
+
+
+/*FOOTER */
+
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(29, 72, 97);
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    color: white;
 }
