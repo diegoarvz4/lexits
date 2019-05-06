@@ -6,9 +6,11 @@
 *, *::after, *::before{
     box-sizing: border-box;    
 }
+//
 
 body{
     font-family: $main-font;
+ 
 }
 
 .flexcontainer{

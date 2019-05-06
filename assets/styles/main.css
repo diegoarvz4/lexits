@@ -172,44 +172,6 @@ table {
     width: 100%;
   }
 }
-@media screen and (min-width: 1200px) {
-  .row .col-extra-lg-1 {
-    width: 8.3333333333%;
-  }
-  .row .col-extra-lg-2 {
-    width: 16.6666666667%;
-  }
-  .row .col-extra-lg-3 {
-    width: 25%;
-  }
-  .row .col-extra-lg-4 {
-    width: 33.3333333333%;
-  }
-  .row .col-extra-lg-5 {
-    width: 41.6666666667%;
-  }
-  .row .col-extra-lg-6 {
-    width: 50%;
-  }
-  .row .col-extra-lg-7 {
-    width: 58.3333333333%;
-  }
-  .row .col-extra-lg-8 {
-    width: 66.6666666667%;
-  }
-  .row .col-extra-lg-9 {
-    width: 75%;
-  }
-  .row .col-extra-lg-10 {
-    width: 83.3333333333%;
-  }
-  .row .col-extra-lg-11 {
-    width: 91.6666666667%;
-  }
-  .row .col-extra-lg-12 {
-    width: 100%;
-  }
-}
 
 *, *::after, *::before {
   box-sizing: border-box;

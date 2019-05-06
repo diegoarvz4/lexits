@@ -1,3 +1,36 @@
 @mixin margin-center(){
     margin: 0 auto;
 }
+
+@mixin create-grid(){
+    @for $i from 1 through $grid-base {
+        &-#{$i} { width: ($i/12)*100% } 
+    }
+}
+
+@mixin grid-media($breakpoint){
+    @media screen and (min-width:$breakpoint){
+        @include create-grid();
+    }
+}
+
+@mixin screen-size($screen){
+    @if $screen == 'small' {
+        &-#{$screen}{
+            @include grid-media(0px);
+        }
+    }@else if $screen == 'medium' {
+        &-#{$screen}{
+            @include grid-media(768px);
+        }
+    }@else if $screen == 'large' {
+        &-#{$screen}{
+            @include grid-media(992px);
+        }
+    }@else if $screen == 'extra-large' {
+        &-#{$screen}{
+            @include grid-media(1200px);
+        }
+    }
+}
+

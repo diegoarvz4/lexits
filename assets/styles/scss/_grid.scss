@@ -5,77 +5,13 @@
 }
 
 .row{
-
+   
     .col{
-                
-        &-small{
-            @media screen and (min-width:0px){
-                &-1{width: $w-1-12;}
-                &-2{width: $w-2-12;}
-                &-3{width: $w-3-12;}   
-                &-4{width: $w-4-12;}
-                &-5{width: $w-5-12;}
-                &-6{width: $w-6-12;}
-                &-7{width: $w-7-12;}
-                &-8{width: $w-8-12;}
-                &-9{width: $w-9-12;}
-                &-10{width: $w-10-12;}
-                &-11{width: $w-11-12;}
-                &-12{width: $w-12-12;}
-            }
-        }
-
-        &-medium{
-            @media screen and (min-width:768px) {
-                &-1{width: $w-1-12;}
-                &-2{width: $w-2-12;}
-                &-3{width: $w-3-12;}
-                &-4{width: $w-4-12;}
-                &-5{width: $w-5-12;}
-                &-6{width: $w-6-12;}
-                &-7{width: $w-7-12;}
-                &-8{width: $w-8-12;}
-                &-9{width: $w-9-12;}
-                &-10{width: $w-10-12;}
-                &-11{width: $w-11-12;}
-                &-12{width: $w-12-12;}
-            }
-        }
         
-        &-large{
-            @media screen and (min-width:992px) {
-                &-1{width: $w-1-12;}
-                &-2{width: $w-2-12;}
-                &-3{width: $w-3-12;}
-                &-4{width: $w-4-12;}
-                &-5{width: $w-5-12;}
-                &-6{width: $w-6-12;}
-                &-7{width: $w-7-12;}
-                &-8{width: $w-8-12;}
-                &-9{width: $w-9-12;}
-                &-10{width: $w-10-12;}
-                &-11{width: $w-11-12;}
-                &-12{width: $w-12-12;}
-            }
-        }
-
-        &-extra-lg{
-            @media screen and (min-width:1200px) {
-                &-1{width: $w-1-12;}
-                &-2{width: $w-2-12;}
-                &-3{width: $w-3-12;}
-                &-4{width: $w-4-12;}
-                &-5{width: $w-5-12;}
-                &-6{width: $w-6-12;}
-                &-7{width: $w-7-12;}
-                &-8{width: $w-8-12;}
-                &-9{width: $w-9-12;}
-                &-10{width: $w-10-12;}
-                &-11{width: $w-11-12;}
-                &-12{width: $w-12-12;}
-            }
-        }
-        
+        @include screen-size(small);
+        @include screen-size(medium);
+        @include screen-size(large);
+        @include screen-size(extra-lg);
     }
 
 }
