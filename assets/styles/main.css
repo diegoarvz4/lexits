@@ -1,165 +1,354 @@
-*, *::after, *::before{
-    box-sizing: border-box;
-    
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
-body{
-    font-family: 'Lato', sans-serif;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
 }
 
-.flexcontainer{
-    display: flex;
+body {
+  line-height: 1;
 }
 
-.clearfix::after{
-    content: "";
-    display: table;
-    clear: both;
+ol, ul {
+  list-style: none;
 }
 
-.center-center{
-    justify-content: center;
-    align-items: center;
+blockquote, q {
+  quotes: none;
 }
 
-header{
-    height: 150px;
-    width: 80%; 
-    margin: 0 auto; 
-    margin-top: 30px;
-    justify-content: space-between;
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
 }
 
-.header-logo{
-    justify-content: flex-start;
-    width:90px;
-    width:90px;
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-.header-logo img{
+.row {
+  clear: both;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 0px) {
+  .row .col-small-1 {
+    width: 8.3333333333%;
+  }
+  .row .col-small-2 {
+    width: 16.6666666667%;
+  }
+  .row .col-small-3 {
+    width: 25%;
+  }
+  .row .col-small-4 {
+    width: 33.3333333333%;
+  }
+  .row .col-small-5 {
+    width: 41.6666666667%;
+  }
+  .row .col-small-6 {
+    width: 50%;
+  }
+  .row .col-small-7 {
+    width: 58.3333333333%;
+  }
+  .row .col-small-8 {
+    width: 66.6666666667%;
+  }
+  .row .col-small-9 {
+    width: 75%;
+  }
+  .row .col-small-10 {
+    width: 83.3333333333%;
+  }
+  .row .col-small-11 {
+    width: 91.6666666667%;
+  }
+  .row .col-small-12 {
     width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .row .col-medium-1 {
+    width: 8.3333333333%;
+  }
+  .row .col-medium-2 {
+    width: 16.6666666667%;
+  }
+  .row .col-medium-3 {
+    width: 25%;
+  }
+  .row .col-medium-4 {
+    width: 33.3333333333%;
+  }
+  .row .col-medium-5 {
+    width: 41.6666666667%;
+  }
+  .row .col-medium-6 {
+    width: 50%;
+  }
+  .row .col-medium-7 {
+    width: 58.3333333333%;
+  }
+  .row .col-medium-8 {
+    width: 66.6666666667%;
+  }
+  .row .col-medium-9 {
+    width: 75%;
+  }
+  .row .col-medium-10 {
+    width: 83.3333333333%;
+  }
+  .row .col-medium-11 {
+    width: 91.6666666667%;
+  }
+  .row .col-medium-12 {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .row .col-large-1 {
+    width: 8.3333333333%;
+  }
+  .row .col-large-2 {
+    width: 16.6666666667%;
+  }
+  .row .col-large-3 {
+    width: 25%;
+  }
+  .row .col-large-4 {
+    width: 33.3333333333%;
+  }
+  .row .col-large-5 {
+    width: 41.6666666667%;
+  }
+  .row .col-large-6 {
+    width: 50%;
+  }
+  .row .col-large-7 {
+    width: 58.3333333333%;
+  }
+  .row .col-large-8 {
+    width: 66.6666666667%;
+  }
+  .row .col-large-9 {
+    width: 75%;
+  }
+  .row .col-large-10 {
+    width: 83.3333333333%;
+  }
+  .row .col-large-11 {
+    width: 91.6666666667%;
+  }
+  .row .col-large-12 {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .row .col-extra-lg-1 {
+    width: 8.3333333333%;
+  }
+  .row .col-extra-lg-2 {
+    width: 16.6666666667%;
+  }
+  .row .col-extra-lg-3 {
+    width: 25%;
+  }
+  .row .col-extra-lg-4 {
+    width: 33.3333333333%;
+  }
+  .row .col-extra-lg-5 {
+    width: 41.6666666667%;
+  }
+  .row .col-extra-lg-6 {
+    width: 50%;
+  }
+  .row .col-extra-lg-7 {
+    width: 58.3333333333%;
+  }
+  .row .col-extra-lg-8 {
+    width: 66.6666666667%;
+  }
+  .row .col-extra-lg-9 {
+    width: 75%;
+  }
+  .row .col-extra-lg-10 {
+    width: 83.3333333333%;
+  }
+  .row .col-extra-lg-11 {
+    width: 91.6666666667%;
+  }
+  .row .col-extra-lg-12 {
+    width: 100%;
+  }
 }
 
-.main-header-links{
-    height: 100%;
-    
+*, *::after, *::before {
+  box-sizing: border-box;
 }
 
-.main-header-links li{
-   margin-right: 30px;
-   margin-left: 30px;
+body {
+  font-family: "Lato", sans-serif;
 }
 
-.main-header-links a{
-    text-decoration: none;
-    color: black;
+.flexcontainer {
+  display: flex;
 }
 
-.main-header-links li:last-child{
-    margin-right: 0;
- }
-
- .main-header-links li:first-child{
-    margin-left: 0;
- }
- 
-.lan-header-links{
-    height: 100%;
-    align-items: center;
+.clearfix::after::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.main-header-links .active-link{
-   color: rgb(39, 0, 146);
-   font-weight: bold;
+.center-center {
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  height: 150px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+header-logo {
+  justify-content: flex-start;
+  width: 90px;
+}
+header-logo img {
+  width: 100%;
+}
+
+.main-header-links {
+  height: 100%;
+}
+.main-header-links .active-link {
+  color: #270092;
+  font-weight: bold;
+}
+.main-header-links li {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+.main-header-links li:last-child {
+  margin-right: 0;
+}
+.main-header-links li:first-child {
+  margin-left: 0;
+}
+.main-header-links a {
+  text-decoration: none;
+  color: black;
+}
+
+.lan-header-links {
+  height: 100%;
+  align-items: center;
 }
 
 /*LEXI BRAND CONTAINER*/
-
-.lexi-brand-container{
-    margin-top: 50px;
-    width: 100%;
-    float: left;
+.lexi-brand {
+  width: 33.33%;
+  padding: 30px;
+  text-align: center;
 }
-
-.lexi-brand{
-    width: 33.33%;
-    padding: 30px;
-    text-align: center;
+.lexi-brand-container {
+  margin-top: 50px;
+  width: 100%;
+  float: left;
 }
-
-.lexi-brand-img{
-    width: 100%;
-    margin-bottom: 50px;
-    min-height: 190px;
+.lexi-brand-img {
+  width: 100%;
+  margin-bottom: 50px;
+  min-height: 190px;
 }
-
-.lexi-brand-img img{
-    width: 100%;
-    height: 145px;
-    min-height: 145px;
+.lexi-brand-img img {
+  width: 100%;
+  height: 145px;
+  min-height: 145px;
 }
-
-.lexi-brand:nth-child(2) .lexi-brand-img img{
-    height: 190px;
-    min-height: 190px;
+.lexi-brand:nth-child(2) .lexi-brand-img img {
+  height: 190px;
+  min-height: 190px;
 }
-
-.lexi-brand:nth-child(3) .lexi-brand-img img{
-    height: 165px;
-    min-height: 165px;
+.lexi-brand:nth-child(3) .lexi-brand-img img {
+  height: 165px;
+  min-height: 165px;
 }
-
-
 
 /*FOOTER */
-
-footer{
-    width: 100%;
-    height: 50px;
-    background-color: rgb(29, 72, 97);
-    clear: both;
-    position: fixed;
-    bottom: 0;
-    text-align: center;
-    color: white;
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: #1d4861;
+  clear: both;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  color: white;
 }
 
 /*NOSOTROS*/
-
-.nosotros-container{
-    width: 80%;
-    margin: 0 auto;
+.nosotros-container {
+  width: 80%;
+  margin: 0 auto;
 }
-
-.nosotros-container-img{
-    width: 40%;
-    height: 500px;
-    background-image: url('http://www.kjellandersjoberg.se/wp-content/uploads/2016/08/KjellanderSjoberg_Team_%C2%A9MikaelOlsson-1200x775.jpg');
-    background-size: cover;
-    background-position: center;
+.nosotros-container-img {
+  width: 40%;
+  height: 500px;
+  background-image: url("http://www.kjellandersjoberg.se/wp-content/uploads/2016/08/KjellanderSjoberg_Team_%C2%A9MikaelOlsson-1200x775.jpg");
+  background-size: cover;
+  background-position: center;
 }
-
-.nosotros-container-msg{
-    text-align: right;
-    width: 60%;
-    padding-left: 20px;
-    line-height: 2.5rem;
+.nosotros-container-msg {
+  text-align: right;
+  width: 60%;
+  padding-left: 20px;
+  line-height: 2.5rem;
 }
-
-.nosotros-container-msg h1{
+.nosotros-container-msg h1 {
   font-size: 1rem;
-  
 }
-
-.nosotros-container-msg h2{
+.nosotros-container-msg h2 {
   font-size: 2.2rem;
   margin-bottom: 40px;
 }
-
-.nosotros-container-msg p{
+.nosotros-container-msg p {
   width: 60%;
   margin-left: 40%;
   margin-right: 0;
   line-height: 2rem;
   font-size: 1.5rem;
 }
+
+/*# sourceMappingURL=main.css.map */

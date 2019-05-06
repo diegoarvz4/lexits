@@ -1,0 +1,180 @@
+@import './reset';
+@import './_variables';
+@import './mixins';
+@import './grid';
+
+*, *::after, *::before{
+    box-sizing: border-box;    
+}
+
+body{
+    font-family: $main-font;
+}
+
+.flexcontainer{
+    display: flex;
+}
+
+.clearfix::after{
+    
+    &::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.center-center{
+    justify-content: center;
+    align-items: center;
+}
+
+
+header{
+    height:$header-height;
+    width: $header-width; 
+    @include margin-center;
+    margin-top: 30px;
+    justify-content: space-between;
+
+    &-logo{
+        justify-content: flex-start;
+        width: $header-logo-width-container;
+        img{
+            width: 100%;
+        }   
+    }
+
+}
+
+
+.main-header-links{
+    height: 100%;
+
+    .active-link{
+        color: rgb(39, 0, 146);
+        font-weight: bold;
+    }
+
+    li{
+        margin-right: 30px;
+        margin-left: 30px;
+        
+        &:last-child{
+            margin-right: 0;
+        }
+
+        &:first-child{
+            margin-left: 0;
+        }
+    }
+    
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+
+ 
+.lan-header-links{
+    height: 100%;
+    align-items: center;
+}
+
+
+/*LEXI BRAND CONTAINER*/
+
+
+
+.lexi-brand{
+    width: 33.33%;
+    padding: 30px;
+    text-align: center;
+
+    &-container{
+        margin-top: 50px;
+        width: 100%;
+        float: left;
+    }
+
+    &-img{
+        width: 100%;
+        margin-bottom: 50px;
+        min-height: 190px;
+        img{
+            width: 100%;
+            height: 145px;
+            min-height: 145px;
+        }
+    }
+
+    &:nth-child(2) .lexi-brand-img img{
+        height: 190px;
+        min-height: 190px;
+    }
+
+    &:nth-child(3) .lexi-brand-img img{
+        height: 165px;
+        min-height: 165px;
+    }
+
+}
+////
+
+/*FOOTER */
+
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(29, 72, 97);
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    color: white;
+}
+
+/*NOSOTROS*/
+
+.nosotros{
+    &-container{
+        width: 80%;
+        margin: 0 auto;
+
+        &-img{
+            width: 40%;
+            height: 500px;
+            background-image: url($nosotros-img-url);
+            background-size: cover;
+            background-position: center;
+        }
+
+        &-msg{
+            text-align: right;
+            width: 60%;
+            padding-left: 20px;
+            line-height: 2.5rem;
+
+            h1{
+                font-size: 1rem;     
+            }
+
+            h2{
+                font-size: 2.2rem;
+                margin-bottom: 40px;
+            }
+              
+            p{
+                width: 60%;
+                margin-left: 40%;
+                margin-right: 0;
+                line-height: 2rem;
+                font-size: 1.5rem;
+            }
+        }
+
+    }
+}
+
+
