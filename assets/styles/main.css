@@ -52,6 +52,11 @@ table {
   border-spacing: 0;
 }
 
+/*IMG's*/
+/*PALETTE*/
+/*******************************/
+/*******************************/
+/**********************************/
 .row {
   clear: both;
   display: flex;
@@ -197,8 +202,10 @@ body {
 }
 
 header {
-  height: 150px;
+  height: 80px;
   width: 80%;
+  max-width: 1080px;
+  margin: 0 auto;
   margin: 0 auto;
   margin-top: 30px;
   justify-content: space-between;
@@ -245,9 +252,10 @@ header-logo img {
   text-align: center;
 }
 .lexi-brand-container {
-  margin-top: 50px;
   width: 100%;
-  float: left;
+  max-width: 1600px;
+  margin: 0 auto;
+  margin-top: 140px;
 }
 .lexi-brand-img {
   width: 100%;
@@ -272,18 +280,37 @@ header-logo img {
 footer {
   width: 100%;
   height: 50px;
-  background-color: #1d4861;
+  background-color: #004f58;
   clear: both;
   position: fixed;
   bottom: 0;
   text-align: center;
-  color: white;
+  color: #f2f8f3;
 }
 
+/*LEXI TITLE*/
+.lexi-title {
+  clear: both;
+  width: 400px;
+  height: 70px;
+  background-color: #00a8a8;
+  color: #f2f8f3;
+  margin-top: 140px;
+  margin-bottom: 140px;
+  align-items: center;
+  padding-left: 10%;
+}
+.lexi-title h1 {
+  font-size: 2rem;
+  display: inline-block;
+}
+
+/*LEXI TITLE END*/
 /*NOSOTROS*/
 .nosotros-container {
   width: 80%;
   margin: 0 auto;
+  margin-bottom: 140px;
 }
 .nosotros-container-img {
   width: 40%;
@@ -311,6 +338,77 @@ footer {
   margin-right: 0;
   line-height: 2rem;
   font-size: 1.5rem;
+}
+
+/*SERVICIOS*/
+.servicios-container {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 140px;
+}
+.servicios-container-img {
+  width: 40%;
+  height: 500px;
+  background-image: url("https://www.jbistudios.com/hs-fs/hubfs/Blog_Images/lip-sync-dubbing-voice-talent-in-studio-video-translation.jpg?width=640&name=lip-sync-dubbing-voice-talent-in-studio-video-translation.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.servicios-container-msg {
+  text-align: right;
+  width: 60%;
+  padding-left: 20px;
+  line-height: 2.5rem;
+}
+.servicios-container-msg h1 {
+  font-size: 1rem;
+}
+.servicios-container-msg h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+}
+.servicios-container-msg p {
+  width: 60%;
+  margin-left: 40%;
+  margin-right: 0;
+  line-height: 2rem;
+  font-size: 1.5rem;
+}
+
+/*SERV-DESC*/
+.serv-desc {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 140px;
+}
+.serv-desc-text {
+  min-height: 300px;
+  position: relative;
+}
+.serv-desc-text * {
+  margin-bottom: 20px;
+}
+.serv-desc-text h1 {
+  font-size: 1rem;
+}
+.serv-desc-text h1 + h1 {
+  font-size: 3rem;
+}
+.serv-desc-text p {
+  font-size: 1.5rem;
+}
+.serv-desc-text button {
+  font-size: 1.5rem;
+  padding: 20px;
+  border: none;
+  color: #f6f6fb;
+  border-radius: 15px;
+  background-color: #c23241;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.serv-desc-img img {
+  max-height: 300px;
 }
 
 /*# sourceMappingURL=main.css.map */

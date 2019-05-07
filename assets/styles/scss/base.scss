@@ -35,6 +35,8 @@ body{
 header{
     height:$header-height;
     width: $header-width; 
+    max-width: $max-width;
+    margin: 0 auto;
     @include margin-center;
     margin-top: 30px;
     justify-content: space-between;
@@ -95,9 +97,11 @@ header{
     text-align: center;
 
     &-container{
-        margin-top: 50px;
         width: 100%;
-        float: left;
+        max-width: 1600px;
+        margin: 0 auto;
+        margin-top: 140px;
+
     }
 
     &-img{
@@ -128,55 +132,96 @@ header{
 
 footer{
     width: 100%;
+
     height: 50px;
-    background-color: rgb(29, 72, 97);
+    background-color: $lexi-ds-green-1;
     clear: both;
     position: fixed;
     bottom: 0;
     text-align: center;
-    color: white;
+    color: #f2f8f3;
 }
+
+/*LEXI TITLE*/
+
+.lexi-title{
+    clear: both;
+    width: 400px;
+    height: 70px;
+    background-color: $lexi-ds-green-2;
+    color: $lexi-ds-white;
+    margin-top: 140px;
+    margin-bottom: 140px;
+    align-items: center;
+    padding-left: (100% - $general-container-width)/2;
+    h1{
+        font-size: 2rem;
+        display: inline-block;
+    }
+}
+
+/*LEXI TITLE END*/
 
 /*NOSOTROS*/
 
 .nosotros{
-    &-container{
-        width: 80%;
-        margin: 0 auto;
-
-        &-img{
-            width: 40%;
-            height: 500px;
-            background-image: url($nosotros-img-url);
-            background-size: cover;
-            background-position: center;
-        }
-
-        &-msg{
-            text-align: right;
-            width: 60%;
-            padding-left: 20px;
-            line-height: 2.5rem;
-
-            h1{
-                font-size: 1rem;     
-            }
-
-            h2{
-                font-size: 2.2rem;
-                margin-bottom: 40px;
-            }
-              
-            p{
-                width: 60%;
-                margin-left: 40%;
-                margin-right: 0;
-                line-height: 2rem;
-                font-size: 1.5rem;
-            }
-        }
-
-    }
+    @include lexi-section($nosotros-img-url);  
 }
+
+/*SERVICIOS*/
+.servicios{
+    @include lexi-section($servicios-img-url);
+}
+
+/*SERV-DESC*/
+
+.serv-desc{
+    @include container;
+    margin-bottom: 140px;
+    &-text{
+
+        min-height: 300px;
+
+        position: relative;
+        *{
+            margin-bottom: 20px;
+        }
+
+        h1{
+            font-size: 1rem;
+        }
+
+        h1+h1{
+            font-size: 3rem;
+        }
+
+        p{
+            font-size: 1.5rem;
+        }
+
+        button{
+            font-size:1.5rem;
+            padding: 20px;
+            border: none;
+            color: $lexi-u-white;
+            border-radius: 15px;
+            background-color: $lexi-u-red;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    &-img{
+        
+        img{
+            max-height: 300px;
+        }
+    }
+
+
+}
+
+
 
 

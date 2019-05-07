@@ -2,6 +2,7 @@
     margin: 0 auto;
 }
 
+/*******************************/
 @mixin create-grid(){
     @for $i from 1 through $grid-base {
         &-#{$i} { width: ($i/12)*100% } 
@@ -33,4 +34,50 @@
         }
     }
 }
+/*******************************/
 
+@mixin container{
+    width: $general-container-width;
+    @include margin-center();
+}
+
+/**********************************/
+
+@mixin lexi-section($img-url){
+    &-container{
+        @include container();
+        margin-bottom: 140px;
+        &-img{
+            width: 40%;
+            height: 500px;
+            background-image: url($img-url);
+            background-size: cover;
+            background-position: center;
+        }
+
+        &-msg{
+            text-align: right;
+            width: 60%;
+            padding-left: 20px;
+            line-height: 2.5rem;
+
+            h1{
+                font-size: 1rem;     
+            }
+
+            h2{
+                font-size: 2.2rem;
+                margin-bottom: 40px;
+            }
+              
+            p{
+                width: 60%;
+                margin-left: 40%;
+                margin-right: 0;
+                line-height: 2rem;
+                font-size: 1.5rem;
+            }
+        }
+
+    }
+}

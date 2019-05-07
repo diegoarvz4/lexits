@@ -1,25 +1,33 @@
 $header-width: 80%;
-$header-height: 150px;
+$max-width: 1080px;
+$general-container-width: 80%;
+$header-height: 80px;
 $header-logo-width-container: 90px;
 $main-font: 'Lato', sans-serif;
+
+/*IMG's*/
 $nosotros-img-url: 'http://www.kjellandersjoberg.se/wp-content/uploads/2016/08/KjellanderSjoberg_Team_%C2%A9MikaelOlsson-1200x775.jpg';
+$servicios-img-url:'https://www.jbistudios.com/hs-fs/hubfs/Blog_Images/lip-sync-dubbing-voice-talent-in-studio-video-translation.jpg?width=640&name=lip-sync-dubbing-voice-talent-in-studio-video-translation.jpg';
+
 
 $grid-base: 12;
 
-$w-1-12: (1/12)*100%;
-$w-2-12: (2/12)*100%;
-$w-3-12: (3/12)*100%;
-$w-4-12: (4/12)*100%;
+/*PALETTE*/
 
+$lexi-ds-green-1: #004f58;
+$lexi-ds-green-2: #00a8a8;
+$lexi-ds-white: #f2f8f3;
 
-$w-5-12: (5/12)*100%;
-$w-6-12: (6/12)*100%;
-$w-7-12: (7/12)*100%;
-$w-8-12: (8/12)*100%;
+$lexi-ts-black:#15161c;
+$lexi-ts-gray: #65656d;
+$lexi-ts-green-3: #3f666c;
 
+$lexi-bi-blue: #546e92;
+$lexi-bi-black: #353436;
+$lexi-bi-white: #f6f6fb;
 
-$w-9-12: (9/12)*100%;
-$w-10-12: (10/12)*100%;
-$w-11-12: (11/12)*100%;
-$w-12-12: (12/12)*100%;
+$lexi-u-red: #c23241;
+$lexi-u-black: #353436;
+$lexi-u-white: #f6f6fb;
+
 
