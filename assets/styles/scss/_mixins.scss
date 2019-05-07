@@ -56,27 +56,31 @@
         }
 
         &-msg{
-            text-align: left;
+            text-align: right;
             width: 40%;
             margin-left: 10%;
-            padding-left: 60px;
+            padding-left: 20px;
             line-height: 2.5rem;
 
             h1{
-                font-size: 1rem;     
+                font-size: 1.3rem; 
+                margin-bottom: 20px;
             }
 
             h2{
-                font-size: 2.2rem;
+                font-size: 3.8rem;
                 margin-bottom: 40px;
+                font-weight: bold;
+                line-height: 3.4rem;
+                color: $lexi-ds-green-1;
             }
               
             p{
                 width: 100%;
                 margin-right: 0;
                 line-height: 2rem;
-                font-size: 1.5rem;
-                text-align: justify;
+                font-size: 1.1rem;
+                text-align: right;
             }
         }
 
