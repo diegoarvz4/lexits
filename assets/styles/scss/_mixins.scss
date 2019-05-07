@@ -48,7 +48,7 @@
         @include container();
         margin-bottom: 140px;
         &-img{
-            width: 40%;
+            width: 50%;
             height: 500px;
             background-image: url($img-url);
             background-size: cover;
@@ -56,9 +56,10 @@
         }
 
         &-msg{
-            text-align: right;
-            width: 60%;
-            padding-left: 20px;
+            text-align: left;
+            width: 40%;
+            margin-left: 10%;
+            padding-left: 60px;
             line-height: 2.5rem;
 
             h1{
@@ -71,8 +72,7 @@
             }
               
             p{
-                width: 60%;
-                margin-left: 40%;
+                width: 100%;
                 margin-right: 0;
                 line-height: 2rem;
                 font-size: 1.5rem;
