@@ -3,6 +3,8 @@
 @import './mixins';
 @import './grid';
 
+//sass --watch assets/styles/scss/base.scss assets/styles/main.css
+
 *, *::after, *::before{
     box-sizing: border-box;    
 }
@@ -36,9 +38,10 @@ header{
     height:$header-height;
     width: $header-width; 
     max-width: $max-width;
-    margin: 0 auto;
+    
     @include margin-center;
     margin-top: 30px;
+    margin-bottom: 60px;
     justify-content: space-between;
 
     &-logo{
@@ -96,12 +99,15 @@ header{
     padding: 30px;
     text-align: center;
 
+    &:hover{
+        cursor: pointer;
+    }
+
     &-container{
         width: 100%;
         max-width: 1600px;
-        margin: 0 auto;
-        margin-top: 140px;
-
+        margin: 140px auto;
+        margin-bottom: 160px;
     }
 
     &-img{

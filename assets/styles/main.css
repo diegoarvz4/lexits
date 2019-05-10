@@ -206,8 +206,8 @@ header {
   width: 80%;
   max-width: 1080px;
   margin: 0 auto;
-  margin: 0 auto;
   margin-top: 30px;
+  margin-bottom: 60px;
   justify-content: space-between;
 }
 header-logo {
@@ -251,11 +251,14 @@ header-logo img {
   padding: 30px;
   text-align: center;
 }
+.lexi-brand:hover {
+  cursor: pointer;
+}
 .lexi-brand-container {
   width: 100%;
   max-width: 1600px;
-  margin: 0 auto;
-  margin-top: 140px;
+  margin: 140px auto;
+  margin-bottom: 160px;
 }
 .lexi-brand-img {
   width: 100%;
