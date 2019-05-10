@@ -45,11 +45,21 @@
 
 @mixin lexi-section($img-url){
     &-container{
-        @include container();
+        width: 100%;
+        
+        @media screen and (min-width:768px){
+            @include container();
+            margin-bottom: 140px;
+        }
+        flex-wrap: wrap;
         max-width: 992px;
         margin-bottom: 140px;
         &-img{
-            width: 50%;
+            min-width: 100%;
+            @media screen and (min-width:768px){
+                min-width: 50%;
+                order: 0;
+            }
             height: 500px;
             background-image: url($img-url);
             background-size: cover;
@@ -57,13 +67,22 @@
         }
 
         &-msg{
-            text-align: right;
-            width: 45%;
-            margin-left: 5%;
-            padding-left: 20px;
+            text-align: left;
+            min-width: 100%;
+            @media screen and (min-width:768px){
+                order: 1;
+                width: 45%;
+                margin-left: 5%;
+                min-width: 45%;
+                padding-left: 20px;
+                text-align: right;
+            }
+            
+            
             line-height: 2.5rem;
 
             h1{
+                text-align: center;
                 font-size: 1.3rem; 
                 margin-bottom: 20px;
             }
@@ -81,7 +100,7 @@
                 margin-right: 0;
                 line-height: 2rem;
                 font-size: 1.1rem;
-                text-align: right;
+                
             }
         }
 
