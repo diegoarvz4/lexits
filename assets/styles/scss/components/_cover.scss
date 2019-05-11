@@ -1,0 +1,45 @@
+.lexi-brand{
+    width: 33.33%;
+    padding: 30px;
+    text-align: center;
+
+    &:hover{
+        cursor: pointer;
+    }
+
+    &-container{
+        width: 100%;
+        max-width: 1600px;
+        margin: 140px auto;
+        margin-bottom: 160px;
+        display: none;
+        
+        @media screen and (min-width:768px){
+            display: flex;
+        }
+    }
+
+    &-img{
+        width: 100%;
+        margin-bottom: 50px;
+        min-height: 190px;
+        img{
+            width: 100%;
+            height: 145px;
+            min-height: 145px;
+        }
+    }
+
+    &:nth-child(2) .lexi-brand-img img{
+        height: 190px;
+        min-height: 190px;
+    }
+
+    &:nth-child(3) .lexi-brand-img img{
+        height: 165px;
+        min-height: 165px;
+    }
+
+    
+
+}

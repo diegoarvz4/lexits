@@ -1,0 +1,8 @@
+.nosotros{
+    @include lexi-section($nosotros-img-url);  
+}
+
+/*SERVICIOS*/
+.servicios{
+    @include lexi-section($servicios-img-url);
+}

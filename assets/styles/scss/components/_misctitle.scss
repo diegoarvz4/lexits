@@ -1,0 +1,15 @@
+.lexi-title{
+    clear: both;
+    width: 400px;
+    height: 70px;
+    background-color: $lexi-ds-green-2;
+    color: $lexi-ds-white;
+    margin-top: 140px;
+    margin-bottom: 100px;
+    align-items: center;
+    padding-left: (100% - $general-container-width)/2;
+    h1{
+        font-size: 2rem;
+        display: inline-block;
+    }
+}
