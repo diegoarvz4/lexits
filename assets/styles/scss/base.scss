@@ -142,6 +142,7 @@ header{
         margin: 140px auto;
         margin-bottom: 160px;
         display: none;
+        
         @media screen and (min-width:768px){
             display: flex;
         }
@@ -222,12 +223,15 @@ footer{
 
 .serv-desc{
     @include container;
-    margin-bottom: 140px;
+    margin-bottom: 100px;
     max-width: 992px;
+    
+    padding-top: 100px;
+    
+    border-top: 1px solid rgba(161, 161, 161, 0.445);
     &-text{
 
-        min-height: 350px;
-
+     
         position: relative;
         *{
             margin-bottom: 20px;
@@ -274,26 +278,57 @@ footer{
     }
 
     &-img{
-        
+        display: flex;
+        align-items: center;
         img{
             max-height: 300px;
             width: 100%;
         }
 
         &-dbs{
-            padding-left: 5%;
-            padding-right: 10%; 
+            margin-top: 50px;
+            padding: 5% 10% 
         }
 
         &-bi{
-            padding-left: 5%;
-            padding-right: 35%; 
+            margin-top: 50px;
+            padding: 5% 10% 
         }
 
         &-lu{
-            padding-left: 5%;
-            padding-right: 26%; 
-        }   
+            margin-top: 50px;
+            padding: 5% 10% 
+        }  
+
+        @media screen and (min-width:768px){
+            &-dbs{
+                padding-left: 5%;
+                padding-right: 10%; 
+                padding-top: 0;
+                padding-bottom: 0; 
+                margin-top: 0;
+            }
+    
+            &-bi{
+                padding-top: 0;
+                padding-bottom: 0; 
+                padding-left: 5%;
+                padding-right: 35%; 
+                margin-top: 0;
+            }
+    
+            &-lu{
+                padding-top: 0;
+                padding-bottom: 0; 
+                padding-left: 5%;
+                padding-right: 26%; 
+                margin-top: 0;
+            }   
+        }
+
+       
+
+        
     }
 
 

@@ -67,7 +67,7 @@
         }
 
         &-msg{
-            text-align: left;
+            text-align: center;
             min-width: 100%;
             @media screen and (min-width:768px){
                 order: 1;
@@ -85,6 +85,7 @@
                 text-align: center;
                 font-size: 1.3rem; 
                 margin-bottom: 20px;
+                font-weight: bold;
             }
 
             h2{
